@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sproduct.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Document</title>
+</head>
+<body>
+                <!------------------ NAVBAR ------------------->
+        <div id="navigationbar">
+            <a href="#"><img src="Images/Logo-Offi.jpg" class="logo" alt="Logo du site"></a>
+
+            <div>
+                <ul id="navbar">
+                 <li><a href="acceuil.html">Home</a></li>
+                 <li><a href="form.html">Login</a></li>
+                 <li><a href="">About</a></li>
+                 <li><a href="">Contact</a></li>
+                 <li><a class="active" href="">Shop</a></li>
+                 <li><a href=""><i class="uil uil-shopping-bag"></i></a></li>
+                </ul>
+            </div>
+        </div>
+                <!------------------ NAVBAR END ------------------->
+                <!------------------ SINGLE PRODUCT ------------------->
+          <section id="prodetails" class="section-p1">
+             <div class="single-pro-image">
+                 <img src="./Images/Boite de jeu.png" width="100%" id="MainImg" alt="">
+                 <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="./Images/f2.jpg" width="100%" class="small-img" alt="">
+                    </div> 
+                    <div class="small-img-col">
+                        <img src="./Images/f3.jpg" width="100%" class="small-img" alt="">
+                    </div> 
+                    <div class="small-img-col">
+                        <img src="./Images/f4.jpg" width="100%" class="small-img" alt="">
+                    </div> 
+                    <div class="small-img-col">
+                        <img src="./Images/f5.jpg" width="100%" class="small-img" alt="">
+                    </div> 
+                 </div>
+             </div>
+             <div class="single-pro-details">
+                 <h6>Jeux de société</h6>
+                 <h4>The Carpate Show</h4>
+                 <h2>$139.00</h2>
+                 <!-- <select>
+                     <option>Select Size</option>
+                     <option>XL</option>
+                     <option>XXL</option>
+                     <option>Small</option>
+                     <option>Large</option>
+                </select> -->
+                <input type="number" value="1">
+                <button class="normal">Add to cart</button>
+                <h4>Détails du produit :</h4>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquid aperiam alias, dolorem omnis praesentium ratione pariatur aliquam! Ducimus corporis similique, ad, vero odio quaerat cum molestias quo dolorem sunt recusandae. Impedit harum voluptates possimus cupiditate non ipsam magni ducimus, facilis similique inventore nisi ullam. Atque perferendis a quam unde?
+                </span>
+            </div>
+         </section> 
+
+         
+                    <!------------------ SINGLE PRODUCT END ------------------->
+                    <!----------- FOOTER -------------->
+            <footer>
+                <div class="footer-content">
+                    <div class="sec aboutus">
+                        <h2>À propos de nous</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates molestias cum sequi dolorem eos nulla a, inventore voluptatum iusto non aperiam, neque nesciunt ipsum reiciendis ad voluptatem impedit nam! Magni accusantium delectus id vitae fuga modi nesciunt molestias quibusdam.
+                        </p>
+                        <ul class="sci">
+                            <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="uil uil-instagram"></i></a></li>
+                            <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="sec quickLinks">
+                        <h2>Liens rapide</h2>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="sec contact">
+                            <h2>Contact Info</h2>
+                            <ul class="info">
+                                <li>
+                                    <span><i class="uil uil-map-marker"></i></span>
+                                    <span>18 Bis Rue du Stade<br>
+                                    Argenteuil Zoo, CP 95100,<br>FR</span>
+                                </li>
+                                <li>
+                                    <span><i class="uil uil-phone"></i></span>
+                                    <p><a href="tel:12345678900">01 45 85 24 64</a><br>
+                                        <a href="tel:12345678900">07 45 85 24 64</a></p>
+                                </li>
+                                <li>
+                                    <span><i class="uil uil-envelope"></i></span>
+                                    <p><a href="mailto:nivus@gmail.com">nivus@gmail.com</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                </div> 
+            </footer>
+            <div class="copyrightText">
+                <p>Copyright © 2022 Gajitimas. Tous Droits Réservés.</p>
+            </div>     
+
+            <script>
+               let MainImg = document.getElementById("MainImg");
+               let smallImg = document.getElementsByClassName("small-img");
+
+               smallImg[0].onclick = function(){
+                   MainImg.src = smallImg[0].src;
+               }
+               smallImg[1].onclick = function(){
+                   MainImg.src = smallImg[1].src;
+               }
+               smallImg[2].onclick = function(){
+                   MainImg.src = smallImg[2].src;
+               }
+               smallImg[3].onclick = function(){
+                   MainImg.src = smallImg[3].src;
+               }
+            </script>
+    </body>
+    </html>

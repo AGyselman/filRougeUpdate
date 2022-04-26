@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="HtmlCss\login.css">
+         
+    <title>Login & Registration Form</title>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="HtmlCss\Images\Logo-Offi.jpg" alt="">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Connexion</span>
+
+                <form action="">
+                    <div class="input-field">
+                        <input type="text" placeholder="Email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Mot de passe" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Se souvenir de moi</label>
+                        </div>
+                        
+                        <a href="#" class="text">Mot de passe oublié?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Se connecter">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Pas encore membre?
+                        <a href="#" class="text signup-link">Créer un compte</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Créer un compte Form -->
+            <div class="form signup">
+                <span class="title">Créer un compte</span>
+
+                <form action="" method="post">
+                    <div class="input-field">
+                        <input type="text" placeholder="Nom d'utilisateur" name="username">
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Entrer votre email" name="email">
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Créer un mot de passe" name="password">
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirmer votre mot de passe" name="password_confirm">
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="sigCheck">
+                            <label for="sigCheck" class="text">Se souvenir de moi</label>
+                        </div>
+                        
+                        <a href="#" class="text">Mot de passe oublié?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="submit" value="Créer compte" name="valider">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Déja membre?
+                        <a href="#" class="text login-link">Se connecter ici</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="HtmlCss/form.js"></script>
+
+</body>
+</html>
